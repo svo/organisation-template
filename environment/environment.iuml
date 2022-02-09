@@ -1,0 +1,42 @@
+@startwbs
+<style>
+wbsDiagram {
+  .company {
+      BackgroundColor Plum
+  }
+
+  .product {
+      BackgroundColor SkyBlue
+  }
+
+  .location {
+      BackgroundColor PaleGreen
+  }
+
+  .function {
+      BackgroundColor Ivory
+  }
+
+  .role {
+      BackgroundColor PaleVioletRed
+  }
+
+  .platform_team {
+      BackgroundColor SandyBrown
+  }
+
+  .stream_aligned_team {
+      BackgroundColor Khaki
+  }
+
+  .enabling_team {
+      BackgroundColor Tomato
+  }
+
+  .complicated_subsystem_team {
+      BackgroundColor MediumTurquoise
+  }
+}
+</style>
+@endwbs
+

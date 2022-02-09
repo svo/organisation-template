@@ -1,0 +1,26 @@
+@startwbs
+
+!define BASEPATH ..
+!include BASEPATH/environment.iuml
+
+* Company <<company>>
+** Delivery <<function>>
+*** Chief Information Officer <<role>>
+**** Delivery Manager <<role>>
+***** Analyst <<role>>
+** Environment <<function>>
+*** Chief Operating Officer <<role>>
+**** Employee Experience Manager <<role>>
+** Product <<function>>
+*** Chief Product Officer <<role>>
+**** Product Manager <<role>>
+** Technology <<function>>
+*** Chief Technology Officer <<role>>
+**** Technology Manager <<role>>
+***** Developer <<role>>
+** Human-Computer Interaction <<function>>
+*** Chief Creative Officer <<role>>
+**** Design Manager <<role>>
+***** Designer <<role>>
+@endwbs
+

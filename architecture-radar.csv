@@ -1,0 +1,5 @@
+"name","ring","quadrant","isNew","description"
+"Strangler Fig","default","patterns","FALSE","An approach for incrementally decomposing a monolithic product by gradually replacing specific pieces of functionality."
+"Test-Driven Development (TDD)","default","practices","FALSE","Software requirements are captured in tests before the corresponding functionality is developed, and progress is tracked by repeatedly running the tests to assert the desired behaviour is being developed."
+"Agile","default","methodologies","FALSE","Uses an iterative approach, where teams deliver work in small increments of functional software and their requirements, plans, and results are evaluated continuously so they can iterate and improve."
+"Retrospective","default","ceremonies","FALSE","Looking back on a period of time, learning from what did or didn't happen, and building an action plan for continuous improvement."

@@ -1,0 +1,20 @@
+@startwbs
+
+!define BASEPATH ..
+!include BASEPATH/environment.iuml
+
+* Company <<company>>
+** Location 1 <<location>>
+*** Delivery <<function>>
+*** Environment <<function>>
+*** Product <<function>>
+*** Technology <<function>>
+*** Human-Computer Interaction <<function>>
+** Locaton 2 <<location>>
+*** Delivery <<function>>
+*** Environment <<function>>
+*** Product <<function>>
+*** Technology <<function>>
+*** Human-Computer Interaction <<function>>
+@endwbs
+

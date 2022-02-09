@@ -1,0 +1,16 @@
+@startwbs
+
+!define BASEPATH .
+!include BASEPATH/environment.iuml
+
+* Company <<company>>
+** Product <<product>>
+** Location <<location>>
+** Function <<function>>
+** Role <<role>>
+** Platform Team <<platform_team>>
+** Stream-aligned Team <<stream_aligned_team>>
+** Enabling Team <<enabling_team>>
+** Complicated Subsystem Team <<complicated_subsystem_team>>
+@endwbs
+

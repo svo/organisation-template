@@ -1,0 +1,35 @@
+{
+  "variables": {
+    "ansible_host": "packer-service",
+    "ansible_connection": "docker",
+    "image_tag": "latest"
+  },
+  "builders": [
+    {
+      "type": "docker",
+      "name": "architecture-sensible-defaults-radar",
+      "image": "svanosselaer/build-your-own-radar:latest",
+      "commit": "true",
+      "run_command": [ "-d", "-t", "-i", "{{.Image}}", "/bin/sh" ],
+      "changes": [
+        "CMD [\"nginx\", \"-g\", \"daemon off;\"]"
+      ]
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "architecture-radar.csv",
+      "destination": "/opt/build-your-own-radar/radar.csv"
+    }
+  ],
+  "post-processors": [
+    [
+      {
+        "type": "docker-tag",
+        "repository": "svanosselaer/organisation-template-architecture-sensible-defaults-radar",
+        "tag": "{{ user `image_tag` }}"
+      }
+    ]
+  ]
+}

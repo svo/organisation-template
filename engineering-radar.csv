@@ -1,0 +1,5 @@
+"name","ring","quadrant","isNew","description"
+"Java","default","languages","FALSE","A general purpose programming language."
+"Vim","default","tools","FALSE","A text editor."
+"Kubernetes","default","platforms","FALSE","A container orchestration system."
+"Spring","default","frameworks","FALSE","An application framework and inversion of control container for the Java platform."
