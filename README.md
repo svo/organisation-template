@@ -69,7 +69,7 @@ We use:
 
 | Description | Mitigation |
 |--|--|
-| Decisions made without all the required interactions/information | [0001-decisions-made-without-all-the-required-interactions-information.md](decisions/0001-decisions-made-without-all-the-required-interactions-information.md) |
+| We want to be making good decisions | [0001-we-want-to-be-making-good-decisions.md](decisions/0001-we-want-to-be-making-good-decisions.md) |
 
 ## Our Technology Entropy Management
 
