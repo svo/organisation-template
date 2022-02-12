@@ -2,4 +2,6 @@
 
 image_tag=${1:-latest}
 
-docker run -p 80:80 --name service --rm svanosselaer/organisation-template-service:$image_tag
+docker run -p 80:80 -d --rm --name service --rm svanosselaer/organisation-template-service:$image_tag &&
+docker run -p 81:80 -d --rm --name architecture_radar --rm svanosselaer/organisation-template-architecture-sensible-defaults-radar:$image_tag &&
+docker run -p 82:80 -d --rm --name engineering_radar --rm svanosselaer/organisation-template-engineering-sensible-defaults-radar:$image_tag

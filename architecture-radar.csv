@@ -1,5 +1,94 @@
 "name","ring","quadrant","isNew","description"
-"Strangler Fig","default","patterns","FALSE","An approach for incrementally decomposing a monolithic product by gradually replacing specific pieces of functionality."
+"Dependency Injection","default","patterns","FALSE","A class accepts the objects it requires instead of creating the objects internally."
+"Module","maintain","patterns","FALSE","Group several related elements into a single conceptual entity."
+"Blackboard","trial","patterns","FALSE","Pattern for the design and implementation of systems that integrate large and diverse specialized modules, and implement complex, non-deterministic control strategies."
+"Singleton","remove","patterns","FALSE","Restricts the instantiation of a class to one single instance."
 "Test-Driven Development (TDD)","default","practices","FALSE","Software requirements are captured in tests before the corresponding functionality is developed, and progress is tracked by repeatedly running the tests to assert the desired behaviour is being developed."
+"Behaviour-Driven Development (BDD)","maintain","practices","FALSE","Cross-functional teams use concrete examples to formalize a shared understanding of how the application should behave."
+"Feature-Driven Development","trial","practices","FALSE","Development is driven from a client-valued functionality perspective."
 "Agile","default","methodologies","FALSE","Uses an iterative approach, where teams deliver work in small increments of functional software and their requirements, plans, and results are evaluated continuously so they can iterate and improve."
-"Retrospective","default","ceremonies","FALSE","Looking back on a period of time, learning from what did or didn't happen, and building an action plan for continuous improvement."
+"Our Continuous Improvement - Retrospective","default","ceremonies","FALSE","<strong>Purpose:</strong> To look back on a period of time to learn from what did or didn't happen, and build an action plan for continuous improvement.<br />
+<br />
+<strong>Outcomes:</strong><br />
+<ul>
+  <li>- Accepted view of what happened over the period of time</li>
+  <li>- Accepted view on actions that might help improvement</li>
+</ul>
+<br />
+<strong>Decisions:</strong><br />
+<ul>
+  <li>- What do we stop doing?</li>
+  <li>- What do we start doing?</li>
+  <li>- What do we continue doing?</li>
+</ul>
+<br />
+<strong>Structure:</strong><br />
+<ul>
+  <li>- Capture thoughts on what did and didn't happened</li>
+  <li>- Discuss thoughts and identify potential actions</li>
+  <li>- Decide on what to stop/start/continue doing</li>
+</ul>"
+"Our Technical Debt - Outdated Design Review","default","ceremonies","FALSE","<strong>Purpose:</strong> To identify decisions or system characteristics that are no longer desirable/fit-for-purpose.<br />
+<br />
+<strong>Outcomes:</strong><br />
+<ul>
+  <li>- Set of problem statements with RAPID assignments (Recommend, Agree, Perform, Input and Decide) that provide context on the problem manifest by the debt identified.</li>
+  <li>- Updates to the engineering radar (additions, subtractions and ring changes)</li>
+  <li>- Updates to the architecture radar (additions, subtractions and ring changes)</li>
+</ul>
+<br />
+<strong>Decisions:</strong><br />
+<ul>
+  <li>- What technical characteristics identified in the architectural decision register and system catalogue have become undesirable?</li>
+  <li>- What technologies should be added, subtracted or change rings in the engineering sensible defaults radar?</li>
+  <li>- What architectural approaches should be added, subtracted or change rings in the architecture sensible defaults radar?</li>
+  <li>- Who is going to Recommend a solution, needs to agree to it, will perform any changes, needs to provide input and who makes the decision on the solution to be enacted to pay off any identified debt?</li>
+</ul>
+<br />
+<strong>Structure:</strong><br />
+<ul>
+  <li>- Review decision register</li>
+  <li>- Review system catalogue</li>
+  <li>- Review engineering sensible defaults radar</li>
+  <li>- Review architecture sensible defaults radar</li>
+</ul>"
+"Our Progress","default","ceremonies","FALSE","<strong>Purpose:</strong> To provide visibility on how we are progressing as a company.<br />
+<br />
+<strong>Outcomes:</strong><br />
+<ul>
+  <li>- Our chief officers and what they are doing is shared</li>
+  <li>- Progress on our initiatives and the impact they have on our Objective Key Results is shared</li>
+</ul>
+<br />
+<strong>Decisions:</strong><br />
+<ul>
+  <li>- Do we need any breakout sessions to unpack any risks, assumption, issues or dependencies?</li>
+</ul>
+<br />
+<strong>Structure:</strong><br />
+<ul>
+  <li>- Introduction to ceremony</li>
+  <li>- Chief [Information & Operating & Product & Technology & Creative] Officers provide activity update</li>
+  <li>- Report on initiative progress and impact on Objectives and Key Results</li>
+  <li>- Review any Risks, Assumptions, Issues or Dependencies and vote on whether breakout is needed to discuss further</li>
+</ul>"
+"Our Plan","default","ceremonies","FALSE","<strong>Purpose:</strong> To provide visibility on the planned activity for the next quarter.<br />
+<br />
+<strong>Outcomes:</strong><br />
+<ul>
+  <li>- Objectives and Key Results for the next quarter are shared</li>
+  <li>- Our chief officers and what they are thinking and why is shared</li>
+  <li>- Initiatives that will be finished by, start or continue in the next quarter and why they are the focus is shared</li>
+</ul>
+<br />
+<strong>Decisions:</strong><br />
+<ul>
+  <li>- Do we need any breakout sessions to unpack any risks, assumption, issues or dependencies?</li>
+</ul>
+<br />
+<strong>Structure:</strong><br />
+<ul>
+  <li>- Introduction to ceremony</li>
+  <li>- Chief [Information & Operating & Product & Technology & Creative] Officers present on their thinking and the motivations</li>
+  <li>- Initiatives for next quarter and the impact expected on our Objectives and Key Results</li>
+</ul>"
