@@ -34,7 +34,24 @@
 
 ![Role Distribution](environment/structure/role-distribution.png)
 
-## Engineering
+## Sensible Defaults
+
+| Term | Definition |
+|--|--|
+| Default ring | Options that are considered a standard for new and existing projects. An Architectural Decision Record (ADR) is to be published to explain why it is a default. |
+| Maintain ring | Options that we need to maintain a proficiency in due to e.g. maintenance requirements for components that are not rewrite appropriate. When there is a new project adjacent to one using it, a maintain option should be considered, and if chosen have a justification published in an Architectural Decision Record (ADR). |
+| Trial ring | Options that we want to try and accept the use of on small projects i.e. projects small enough that we would consider rewrite over refactor. An Architectural Decision Record (ADR) is to be published justifying the use of a new option of this type, and completion of any project using it should trigger a retrospective to see if the option moves to another ring. |
+| Remove ring | Options that have been used and we are actively working to, or wish to remove. An Architectural Decision Record (ADR) is to be published to explain why it is being removed from our options. |
+| Languages quadrant | Programming languages used to implement algorithms in software to solve problems using a computer. |
+| Tools quadrant | Software that is used in the development, repair, or enhancement of other software. |
+| Platforms quadrant | A set of software and supporting resources that provides the ability to deliver software to a consumer. |
+| Frameworks quadrant | A software component that provides a generic and consistent behaviour. This behaviour can be leveraged in the development of new software, and can provide efficiency and remove errors. |
+| Patterns quadrant | A generic and reusable approach, that can be used to solve a common problem that can represent in the programming of a new software solution. |
+| Practices quadrant | A reusable approach for the programming of software, that has a defined set of benefits and costs. |
+| Methodologies quadrant | A set of processes used to describe the parts, phases, inputs, outputs and activities used to deliver software. |
+| Ceremonies quadrant | A time when a collection of people gather for a purpose, to achieve a set of outcomes, and make decisions using a structured approach. |
+
+### Engineering
 
 We are using the [ThoughtWorks Radar](https://www.thoughtworks.com/radar/byor) approach for communicating the languages, tools, platforms and frameworks sensible defaults within the organisation.
 
@@ -42,7 +59,7 @@ The content is in the [engineering-radar.csv](engineering-radar.csv) file.
 
 You can build the radar image locally using the following command: `./bin/build-engineering-sensible-defaults-radar`
 
-## Architecture
+### Architecture
 
 We are using the [ThoughtWorks Radar](https://www.thoughtworks.com/radar/byor) approach for communicating the patterns, practices, methodologies and ceremonies sensible defaults within the organisation.
 
@@ -126,35 +143,11 @@ Maintain a register of decisions that deliberately incur debt. This is a table t
 
 ### Bit Rot
 
-Development teams are required to create Architectural Decision Records (ADR) to avoid their products devolving into unnecessary complexity and/or suffering design drift. A team makes a recommendation, adjacent product teams and technology leaders need to agree, the team will perform any updates to their projects and/or processes, input will be sought from the technology function in the business, and the decision on the approaches to be utilised will be made by the team Technology Manager.
+Development teams are required to create Architectural Decision Records (ADR) to avoid their products devolving into unnecessary complexity and/or suffering design drift. A team makes a recommendation, adjacent product teams and technology leaders need to agree, the team will perform any updates to their projects and/or processes, input will be sought from the technology function in the business, and the decision on the approaches to be utilised will be made by the team Engineering Manager.
 
 ### Outdated Design
 
-Quarterly review. The Purpose, Outcomes, Decisions and Structure (PODS):
-
-#### Purpose
-
-To identify decisions or system characteristics that are no longer desirable/fit-for-purpose.
-
-#### Outcomes
-
-* Set of problem statements with RAPID assignments (Recommend, Agree, Perform, Input and Decide) that provide context on the problem manifest by the debt identified.
-* Updates to the engineering radar (additions, subtractions and ring changes)
-* Updates to the architecture radar (additions, subtractions and ring changes)
-
-#### Decisions
-
-* What technical characteristics identified in the architectural decision register and system catalogue have become undesirable?
-* What technologies should be added, subtracted or change rings in the engineering sensible defaults radar?
-* What architectural approaches should be added, subtracted or change rings in the architecture sensible defaults radar?
-* Who is going to Recommend a solution, needs to agree to it, will perform any changes, needs to provide input and who makes the decision on the solution to be enacted to pay off any identified debt?
-
-#### Structure
-
-* Review decision register
-* Review system catalogue
-* Review engineering sensible defaults radar
-* Review architecture sensible defaults radar
+Quarterly ceremony to identify decisions or system characteristics that are no longer desirable/fit-for-purpose - "Our Technical Debt - Outdated Design Review".
 
 ## Our Cost Management
 
@@ -204,5 +197,4 @@ The table below defines who is responsible, accountable, needs to be consulted o
 
 ## Links
 
-* [Summary Presentation](https://docs.google.com/presentation/d/1jPQLlfglIwNaouPC94LcN0ZQgPY535Ah9nWuxWScuOk/edit?usp=sharing)
 * [Architecture Decision Register](decisions)
