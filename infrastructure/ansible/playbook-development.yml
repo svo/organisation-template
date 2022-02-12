@@ -1,0 +1,32 @@
+---
+- hosts: all
+
+  pre_tasks:
+    - name: Update apt cache and upgrade
+      apt: update_cache=yes upgrade=yes
+      become: yes
+
+    - name: Install avahi for multicast DNS/DNS-SD service discovery
+      apt: pkg=avahi-daemon
+      become: yes
+
+  roles:
+    - git
+    - python
+    - ansible
+    - docker
+    - packer
+    - gh-md-to-html
+    - plantuml
+
+  post_tasks:
+    - name: Add docker group for user
+      user: name=vagrant groups=docker append=yes
+      become: yes
+
+    - name: Set python3 as default python
+      alternatives:
+        name: python
+        link: /usr/bin/python
+        path: /usr/lib/pyenv/shims/python3.8
+      become: yes

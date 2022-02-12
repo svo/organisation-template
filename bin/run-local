@@ -1,0 +1,5 @@
+#!/bin/bash
+
+image_tag=${1:-latest}
+
+docker run -p 80:80 --name service --rm svanosselaer/organisation-template-service:$image_tag

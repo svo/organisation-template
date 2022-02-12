@@ -1,0 +1,57 @@
+{
+  "variables": {
+    "ansible_host": "packer-service",
+    "ansible_connection": "docker",
+    "image_tag": "latest"
+  },
+  "builders": [
+    {
+      "type": "docker",
+      "name": "organisation-template-service",
+      "image": "debian:9-slim",
+      "commit": "true",
+      "run_command": [
+        "-d",
+        "-i",
+        "-t",
+        "--name",
+        "{{user `ansible_host`}}",
+        "{{.Image}}",
+        "/bin/bash"
+      ],
+      "changes": [
+        "CMD [\"nginx\", \"-g\", \"daemon off;\"]"
+      ]
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "export DEBIAN_FRONTEND=noninteractive",
+        "echo 'APT::Install-Recommends \"0\";' > /etc/apt/apt.conf.d/00apt",
+        "echo 'APT::Install-Suggests \"0\";' >> /etc/apt/apt.conf.d/00apt",
+        "apt-get update",
+        "apt-get install openssh-server sudo python3 python3-setuptools -yq"
+      ]
+    },
+    {
+      "type": "ansible",
+      "user": "root",
+      "playbook_file": "infrastructure/ansible/playbook-service.yml",
+      "extra_arguments": [
+        "--extra-vars",
+        "ansible_host={{user `ansible_host`}} ansible_connection={{user `ansible_connection`}}"
+      ]
+    }
+  ],
+  "post-processors": [
+    [
+      {
+        "type": "docker-tag",
+        "repository": "svanosselaer/organisation-template-service",
+        "tag": "{{ user `image_tag` }}"
+      }
+    ]
+  ]
+}

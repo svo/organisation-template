@@ -1,0 +1,5 @@
+#!/bin/bash
+
+image_tag=${1:-latest}
+
+packer build -var "image_tag=$image_tag" -color=false infrastructure/packer/service.json

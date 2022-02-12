@@ -1,0 +1,33 @@
+---
+- hosts: all
+
+  pre_tasks:
+    - name: Update apt cache and upgrade
+      apt: update_cache=yes upgrade=yes
+      become: yes
+
+  roles:
+    - nginx
+    - fancyindex
+
+  post_tasks:
+
+    - name: copy static content
+      copy:
+        force: yes
+        src: html
+        dest: /var/www/
+
+    - name: Give permission to list decision register directory
+      blockinfile:
+        path: /etc/nginx/sites-enabled/default
+        create: yes
+        marker: "# ANSIBLE MANAGED DECISIONS LOCATION BLOCK"
+        insertafter: ".*root /var/www/html;"
+        block: |
+          location /decisions/ {
+            fancyindex on;
+            fancyindex_exact_size off;
+            fancyindex_ignore github-markdown-css images;
+          }
+
