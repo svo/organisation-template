@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cp -r decisions infrastructure/ansible/files/html
+cp *-radar.csv infrastructure/ansible/files/html
 
 pushd environment
 java -jar /usr/share/java/plantuml.jar *.puml

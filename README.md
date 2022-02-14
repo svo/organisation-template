@@ -57,15 +57,11 @@ We are using the [ThoughtWorks Radar](https://www.thoughtworks.com/radar/byor) a
 
 The content is in the [engineering-radar.csv](engineering-radar.csv) file.
 
-You can build the radar image locally using the following command: `./bin/build-engineering-sensible-defaults-radar`
-
 ### Architecture
 
 We are using the [ThoughtWorks Radar](https://www.thoughtworks.com/radar/byor) approach for communicating the patterns, practices, methodologies and ceremonies sensible defaults within the organisation.
 
 The content is in the [architecture-radar.csv](architecture-radar.csv) file.
-
-You can build the radar image locally using the following command: `./bin/build-architecture-sensible-defaults-radar`
 
 ## How We Work
 
@@ -194,6 +190,14 @@ The table below defines who is responsible, accountable, needs to be consulted o
 <sup>\[1\]</sup> managers involved in incident determined by products affected.
 
 <sup>\[2\]</sup> teams involved in incident determined by accountable role and system catalogue consultation.
+
+## Project Docker Images
+
+* This document and the decision register: `./bin/create-service`
+* The engineering sensible defaults radar: `./bin/build-engineering-sensible-defaults-radar`
+* The architecture sensible defaults radar: `./bin/build-architecture-sensible-defaults-radar`
+* The development environment alternative to `Vagrant` + `VirtualBox`: `./bin/create-development`
+* An image to build the project: `./bin/create-buildnode`
 
 ## Links
 
