@@ -84,6 +84,68 @@ We use:
 |--|--|
 | We want to be making good decisions | [0001-we-want-to-be-making-good-decisions.md](decisions/0001-we-want-to-be-making-good-decisions.md) |
 
+## Our Team Contract
+
+### Interaction Modes
+
+The more repeated a task, the more we favour X-as-a-service over facilitation, and facilitation over collaboration.
+
+#### Collaboration
+
+Working with another person or team to achieve an outcome.
+
+##### Guidelines
+
+* use calendars
+* we don't book on top of existing calendars
+* we block out before 10:00 and after 16:00 in our calendars
+* we block out from noon to 13:30 in our calendars
+* meetings invites have a defined Purpose, set of Outcomes, Decisions to be made, and a Structure (PODS)
+
+##### Managing Outliers
+
+###### No Suitable Meeting Time
+
+* create a channel with the mandatory participants in your messaging platform and organise a suitable time asynchronously
+
+###### When Urgency Dictates Haste
+
+* create a channel with the mandatory participants in your messaging platform
+* determine Purpose, set of Outcomes, Decisions to be made, and a Structure (PODS) for any meeting required
+* organise a suitable time for any meeting required, ensuring that the urgency is catered for
+
+###### Receive Unexpected Calendar Conflict
+
+* decline invite with message "I have another commitment scheduled for this time and will not be able to attend. Many apologies."
+
+#### Facilitation
+
+Providing another person or team assistance to achieve an outcome.
+
+##### Guidelines
+
+* anyone in the team can facilitate providing the assistance
+* any supporting material is discoverable and has a degree of self-serve
+* teams have a dedicated channel in your messaging platform for assistance requests
+
+##### Managing Outliers
+
+Escalate to collaboration.
+
+#### X-as-a-Service
+
+Providing an automated capability to another person or team to achieve an outcome.
+
+##### Guidelines
+
+* services provide any API assistance using an API interfacing approach that is consistent across the organisation
+* services provide any User Interface assistance using a consistent design language
+* services are discoverable in a consistent way across teams and have self-serve documentation
+
+##### Managing Outliers
+
+Escalate to facilitation.
+
 ## Our Technology Entropy Management
 
 ### Use Sensible Defaults
