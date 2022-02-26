@@ -253,14 +253,6 @@ The table below defines who is responsible, accountable, needs to be consulted o
 
 <sup>\[2\]</sup> teams involved in incident determined by accountable role and system catalogue consultation.
 
-## Project Docker Images
-
-* This document and the decision register: `./bin/create-service`
-* The engineering sensible defaults radar: `./bin/build-engineering-sensible-defaults-radar`
-* The architecture sensible defaults radar: `./bin/build-architecture-sensible-defaults-radar`
-* The development environment alternative to `Vagrant` + `VirtualBox`: `./bin/create-development`
-* An image to build the project: `./bin/create-buildnode`
-
 ## Links
 
 * [Architecture Decision Register](decisions)
