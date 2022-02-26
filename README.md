@@ -201,7 +201,7 @@ Maintain a register of decisions that deliberately incur debt. This is a table t
 
 ### Bit Rot
 
-Development teams are required to create Architectural Decision Records (ADR) to avoid their products devolving into unnecessary complexity and/or suffering design drift. A team makes a recommendation, adjacent product teams and technology leaders need to agree, the team will perform any updates to their projects and/or processes, input will be sought from the technology function in the business, and the decision on the approaches to be utilised will be made by the team Engineering Manager.
+Development teams are required to create Architectural Decision Records (ADR) to avoid their products devolving into unnecessary complexity and/or suffering design drift. A team makes a recommendation, adjacent product teams and technology leaders need to agree, the team will perform any updates to their projects and/or processes, input will be sought from the technology function in the business, and the decision on the approaches to be utilised will be made by the team Technology Manager.
 
 ### Outdated Design
 
