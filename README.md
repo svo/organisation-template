@@ -57,11 +57,15 @@ We are using the [ThoughtWorks Radar](https://www.thoughtworks.com/radar/byor) a
 
 The content is in the [engineering-radar.csv](engineering-radar.csv) file.
 
+The live version is [here](http://engineering-sensible-defaults.qual.is/).
+
 ### Architecture
 
 We are using the [ThoughtWorks Radar](https://www.thoughtworks.com/radar/byor) approach for communicating the patterns, practices, methodologies and ceremonies sensible defaults within the organisation.
 
 The content is in the [architecture-radar.csv](architecture-radar.csv) file.
+
+The live version is [here](http://architecture-sensible-defaults.qual.is/).
 
 ## How We Work
 
