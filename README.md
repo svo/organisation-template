@@ -88,7 +88,7 @@ We use:
 |--|--|
 | We want to be making good decisions | [0001-we-want-to-be-making-good-decisions.md](decisions/0001-we-want-to-be-making-good-decisions.md) |
 
-## Our Team Contract
+## Our Team Charter
 
 ### Interaction Modes
 
