@@ -1,5 +1,9 @@
 # Organisation Template
 
+## Links
+
+* [Architecture Decision Register](decisions)
+
 ## Environment
 
 ### Structure
@@ -256,7 +260,3 @@ The table below defines who is responsible, accountable, needs to be consulted o
 <sup>\[1\]</sup> managers involved in incident determined by products affected.
 
 <sup>\[2\]</sup> teams involved in incident determined by accountable role and system catalogue consultation.
-
-## Links
-
-* [Architecture Decision Register](decisions)
