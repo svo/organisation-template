@@ -1,25 +1,28 @@
 #!/bin/bash
 
-cp -r decisions infrastructure/ansible/files/html
-cp *-radar.csv infrastructure/ansible/files/html
+cp -r decisions infrastructure/ansible/files/html &&
+cp *-radar.csv infrastructure/ansible/files/html &&
 
-pushd environment
-java -jar /usr/share/java/plantuml.jar *.puml
-pushd structure
-java -jar /usr/share/java/plantuml.jar *.puml
-popd
-popd
+pushd environment &&
+java -jar /usr/share/java/plantuml.jar *.puml &&
+pushd structure &&
+java -jar /usr/share/java/plantuml.jar *.puml &&
+popd &&
+popd &&
 
-pushd infrastructure/ansible/files/html
+pushd infrastructure/ansible/files/html &&
 
-/usr/lib/pyenv/shims/gh-md-to-html -d . ../../../../README.md
+/usr/lib/pyenv/shims/gh-md-to-html -d . ../../../../README.md &&
 
-pushd decisions
-/usr/lib/pyenv/shims/gh-md-to-html -d . *.md
-popd
+pushd decisions &&
+for i in *.md; do
+  /usr/lib/pyenv/shims/gh-md-to-html -d . $i &&
+  rm $i &&
+  name=`echo $i | cut -d. -f1` &&
+  sed -i "s/$i/$name.html/g" ../README.html
+done
+popd &&
 
-sed -i 's/\.md\"/.html\"/g' README.html
-
-mv README.html index.html
+mv README.html index.html &&
 
 popd
