@@ -28,6 +28,7 @@
           location /decisions/ {
             fancyindex on;
             fancyindex_exact_size off;
+            fancyindex_time_format "";
             fancyindex_ignore github-markdown-css images;
           }
 
