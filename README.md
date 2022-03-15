@@ -1,8 +1,7 @@
 # Organisation Template
 
-## Links
-
-* [Architecture Decision Register](decisions)
+<details>
+<summary><b>Environment</b></summary>
 
 ## Environment
 
@@ -38,6 +37,11 @@
 
 ![Role Distribution](environment/structure/role-distribution.png)
 
+</details>
+
+<details>
+<summary><b>Sensible Defaults</b></summary>
+
 ## Sensible Defaults
 
 | Term | Definition |
@@ -71,6 +75,11 @@ The content is in the [architecture-radar.csv](architecture-radar.csv) file.
 
 The live version is [here](http://architecture-sensible-defaults.qual.is/).
 
+</details>
+
+<details>
+<summary><b>How We Work</b></summary>
+
 ## How We Work
 
 We use:
@@ -91,6 +100,11 @@ We use:
 | Description | Mitigation |
 |--|--|
 | We want to be making good decisions | [0001-we-want-to-be-making-good-decisions.md](decisions/0001-we-want-to-be-making-good-decisions.md) |
+
+</details>
+
+<details>
+<summary><b>Our Team Charter</b></summary>
 
 ## Our Team Charter
 
@@ -154,6 +168,11 @@ Providing an automated capability to another person or team to achieve an outcom
 
 Escalate to facilitation.
 
+</details>
+
+<details>
+<summary><b>Our Technology Entropy Management</b></summary>
+
 ## Our Technology Entropy Management
 
 ### Use Sensible Defaults
@@ -180,6 +199,11 @@ Use consistent metrics as a contract for all our teams to report on e.g. softwar
 
 Measure what we care about so we can favour data over rhetoric when making decisions and discussing our progress. Examples we expect our teams to use are the DORA metrics, Real User Monitoring (RUM) for e.g. performance, and analytics measures such as Daily Active Users (DAU).
 
+</details>
+
+<details>
+<summary><b>Our Software Development and Delivery Management</b></summary>
+
 ## Our Software Development and Delivery Management
 
 ### Give Autonomy Over Giving The Approach
@@ -201,6 +225,11 @@ Teams are to avoid manual activities and ruthlessly automate. Determining whethe
 
 Teams are to report on e.g. Objectives and Key Result progress using a format that is consistent between them. This provides the leadership team with a ubiquitous language and reduces cognitive load.
 
+</details>
+
+<details>
+<summary><b>Our Technical Debt Management</b></summary>
+
 ## Our Technical Debt Management
 
 ### Deliberate
@@ -214,6 +243,11 @@ Development teams are required to create Architectural Decision Records (ADR) to
 ### Outdated Design
 
 Quarterly ceremony to identify decisions or system characteristics that are no longer desirable/fit-for-purpose - "Our Technical Debt - Outdated Design Review".
+
+</details>
+
+<details>
+<summary><b>Our Cost Management</b></summary>
 
 ## Our Cost Management
 
@@ -234,6 +268,11 @@ Quarterly ceremony to identify decisions or system characteristics that are no l
   * `ARPU x Average Months User is Active – COGS`
 * We use a standard account method to measure our overall profitability:
   * `Revenue – COGS – Expenses`
+
+</details>
+
+<details>
+<summary><b>Our Incident Management</b></summary>
 
 ## Our Incident Management
 
@@ -260,3 +299,14 @@ The table below defines who is responsible, accountable, needs to be consulted o
 <sup>\[1\]</sup> managers involved in incident determined by products affected.
 
 <sup>\[2\]</sup> teams involved in incident determined by accountable role and system catalogue consultation.
+
+</details>
+
+<details>
+<summary><b>Links</b></summary>
+
+## Links
+
+* [Architecture Decision Register](decisions)
+
+</details>
