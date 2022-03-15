@@ -303,9 +303,9 @@ The table below defines who is responsible, accountable, needs to be consulted o
 </details>
 
 <details>
-<summary><b>Links</b></summary>
+<summary><b>Decisions</b></summary>
 
-## Links
+## Decisions
 
 * [Architecture Decision Register](decisions)
 
