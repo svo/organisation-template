@@ -1,0 +1,23 @@
+a:link {
+  color: #1A0DAB;
+}
+
+a:visited {
+  color: #6C00A2;
+}
+
+html {
+  background-color: #CFD8DC;
+}
+
+body {
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+h1 {
+  text-align: center;
+  color: #CFD8DC;
+}
+

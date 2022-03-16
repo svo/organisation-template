@@ -2,6 +2,14 @@
 
 cp -r decisions infrastructure/ansible/files/html &&
 cp *-radar.csv infrastructure/ansible/files/html &&
+cp main.css infrastructure/ansible/files/html &&
+cp tufte.min.css infrastructure/ansible/files/html &&
+cp details.css infrastructure/ansible/files/html &&
+cp custom.css infrastructure/ansible/files/html &&
+cp main.css infrastructure/ansible/files/html/decisions &&
+cp tufte.min.css infrastructure/ansible/files/html/decisions &&
+cp details.css infrastructure/ansible/files/html/decisions &&
+cp custom.css infrastructure/ansible/files/html/decisions &&
 
 pushd environment &&
 java -jar /usr/share/java/plantuml.jar *.puml &&
@@ -12,17 +20,21 @@ popd &&
 
 pushd infrastructure/ansible/files/html &&
 
-/usr/lib/pyenv/shims/gh-md-to-html -d . ../../../../README.md &&
+/usr/lib/pyenv/shims/gh-md-to-html --extra-css main.css -d . ../../../../README.md &&
 
 pushd decisions &&
 for i in *.md; do
-  /usr/lib/pyenv/shims/gh-md-to-html -d . $i &&
+  /usr/lib/pyenv/shims/gh-md-to-html --extra-css main.css -d . $i &&
   rm $i &&
   name=`echo $i | cut -d. -f1` &&
   sed -i "s/$i/$name.html/g" ../README.html
 done
+
+rm main.css &&
 popd &&
 
 mv README.html index.html &&
+
+rm main.css &&
 
 popd
