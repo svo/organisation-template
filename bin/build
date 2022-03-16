@@ -2,6 +2,7 @@
 
 cp -r decisions infrastructure/ansible/files/html &&
 cp *-radar.csv infrastructure/ansible/files/html &&
+cp logo.png infrastructure/ansible/files/html &&
 cp main.css infrastructure/ansible/files/html &&
 cp tufte.min.css infrastructure/ansible/files/html &&
 cp details.css infrastructure/ansible/files/html &&
