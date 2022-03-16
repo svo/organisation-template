@@ -3,8 +3,6 @@
 <details>
 <summary><b>Environment</b></summary>
 
-## Environment
-
 ### Structure
 
 #### Definitions
@@ -42,8 +40,6 @@
 <details>
 <summary><b>Sensible Defaults</b></summary>
 
-## Sensible Defaults
-
 | Term | Definition |
 |--|--|
 | Default ring | Options that are considered a standard for new and existing projects. An Architectural Decision Record (ADR) is to be published to explain why it is a default. |
@@ -80,8 +76,6 @@ The live version is [here](http://architecture-sensible-defaults.qual.is/).
 <details>
 <summary><b>How We Work</b></summary>
 
-## How We Work
-
 We use:
 
 * [The RACI Model](https://racichart.org/the-raci-model/) to define the way a role participates in the completion of a task.
@@ -105,8 +99,6 @@ We use:
 
 <details>
 <summary><b>Our Team Charter</b></summary>
-
-## Our Team Charter
 
 ### Interaction Modes
 
@@ -173,8 +165,6 @@ Escalate to facilitation.
 <details>
 <summary><b>Our Technology Entropy Management</b></summary>
 
-## Our Technology Entropy Management
-
 ### Use Sensible Defaults
 
 Capture sensible defaults for technology (languages, frameworks, tools and platforms) and architecture (patterns, practices, methodologies and ceremonies). These help guide teams to acceptable decisions on code, quality, software delivery approaches and architectural management, while still maintaining a degree of autonomy.
@@ -204,8 +194,6 @@ Measure what we care about so we can favour data over rhetoric when making decis
 <details>
 <summary><b>Our Software Development and Delivery Management</b></summary>
 
-## Our Software Development and Delivery Management
-
 ### Give Autonomy Over Giving The Approach
 
 Teams develop and deliver using a combination of approaches they identify as suitable given the Problems, Opportunities, Objectives and Constraints of the team. The approach is to “trust, but verify”, through tracking whether the team is an Elite, High, Medium or Low performer based on the DORA Metrics: Lead Time to Changes (LTTC), Deployment Frequency (DF), Mean Time To Recovery (MTTR) and Change Failure Rate (CFR).
@@ -230,8 +218,6 @@ Teams are to report on e.g. Objectives and Key Result progress using a format th
 <details>
 <summary><b>Our Technical Debt Management</b></summary>
 
-## Our Technical Debt Management
-
 ### Deliberate
 
 Maintain a register of decisions that deliberately incur debt. This is a table that has columns for: ‘Date’, ‘Repay By Date’, ‘Description’, ‘Justification’, ‘Estimated Effort’ and ‘Link to Related Architectural Decision Record’.
@@ -248,8 +234,6 @@ Quarterly ceremony to identify decisions or system characteristics that are no l
 
 <details>
 <summary><b>Our Cost Management</b></summary>
-
-## Our Cost Management
 
 ### Cost Of Goods Sold (COGS)
 
@@ -304,8 +288,6 @@ The table below defines who is responsible, accountable, needs to be consulted o
 
 <details>
 <summary><b>Decisions</b></summary>
-
-## Decisions
 
 * [Architecture Decision Register](decisions)
 
